@@ -1,0 +1,1 @@
+import randomimport itertools# Generate a random list of 30 numbersmylist = random.sample(range(-30,30), 30)print "H random generated lista" print "\n"print mylistprint "Oloi oi syndiasmoi pou bgazoun san apotelesma 0 apo th lista"print "\n"combins = itertools.combinations(mylist, 3)interested = list(filter(lambda combin: sum(combin) == 0, combins))print(interested)
